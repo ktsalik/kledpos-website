@@ -1,0 +1,1968 @@
+<!doctype html>
+<html lang="el">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KledPOS | Το εστιατόριό σας, σε μία ροή</title>
+    <meta
+      name="description"
+      content="Παραγγελίες, κουζίνα, απόθεμα και εικόνα της επιχείρησης σε μία σύγχρονη πλατφόρμα για εστιατόρια."
+    />
+    <link rel="icon" href="favicon.svg?v=kledpos-1" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/contact.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header class="site-header">
+        <a class="logo-link" href="#top"
+          ><span class="brand" aria-label="KledPOS"
+            ><svg
+              class="kled-mark"
+              width="40"
+              height="40"
+              viewBox="0 0 48 48"
+              fill="none"
+              aria-hidden="true"
+            >
+              <defs>
+                <linearGradient
+                  id="header-logo-lit"
+                  x1="10"
+                  y1="8"
+                  x2="30"
+                  y2="30"
+                >
+                  <stop stop-color="#fdba74"></stop>
+                  <stop offset="1" stop-color="#f97316"></stop>
+                </linearGradient>
+                <linearGradient
+                  id="header-logo-shade"
+                  x1="14"
+                  y1="20"
+                  x2="38"
+                  y2="42"
+                >
+                  <stop stop-color="#ea580c"></stop>
+                  <stop offset="1" stop-color="#b93c09"></stop>
+                </linearGradient>
+                <clipPath id="header-logo-above">
+                  <polygon points="0,0 48,0 48,11.5 0,33.5"></polygon>
+                </clipPath>
+                <clipPath id="header-logo-below">
+                  <polygon points="0,34.5 48,12.5 48,48 0,48"></polygon>
+                </clipPath>
+              </defs>
+              <g
+                class="mark-half mark-half-top"
+                clip-path="url(#header-logo-above)"
+              >
+                <path
+                  d="M10 8 H17 V20.5 L28.5 8 H37 L25 22.5 L37.5 40 H29 L19.5 26.5 L17 29 V40 H10 Z"
+                  fill="url(#header-logo-lit)"
+                ></path>
+              </g>
+              <g
+                class="mark-half mark-half-bottom"
+                clip-path="url(#header-logo-below)"
+              >
+                <path
+                  d="M10 8 H17 V20.5 L28.5 8 H37 L25 22.5 L37.5 40 H29 L19.5 26.5 L17 29 V40 H10 Z"
+                  fill="url(#header-logo-shade)"
+                ></path>
+              </g></svg
+            ><span class="brand-word">Kled<span>POS</span></span></span
+          ></a
+        >
+        <nav class="desktop-nav" aria-label="Κύρια πλοήγηση">
+          <a href="#flow">Η πλατφόρμα</a><a href="#features">Δυνατότητες</a
+          ><a href="#contact">Επικοινωνία</a>
+        </nav>
+        <div class="header-actions">
+          <a
+            class="login-link"
+            href="https://kledpos.tsalikidis.dev/"
+            target="_blank"
+            rel="noreferrer"
+            >Σύνδεση</a
+          ><a
+            class="button button-small button-start"
+            href="https://kledpos.tsalikidis.dev/auth/register"
+            target="_blank"
+            rel="noreferrer"
+            >Ξεκινήστε δωρεάν
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-right"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path></svg
+          ></a>
+        </div>
+      </header>
+      <section class="hero" id="top">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <h1 class="reveal-two">
+            Το εστιατόριο σας.<br />Μια <em>κεντρική</em> διαχείριση.
+          </h1>
+          <p class="hero-lede reveal-three">
+            Παραγγελίες, κουζίνα, απόθεμα και εικόνα της επιχείρησης,
+            συνδεδεμένα σε ένα σύγχρονο, απλό περιβάλλον.
+          </p>
+          <div class="hero-actions reveal-four">
+            <a
+              class="button button-primary"
+              href="https://kledpos.tsalikidis.dev/auth/register"
+              target="_blank"
+              rel="noreferrer"
+              >Ξεκινήστε δωρεάν
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-right"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path></svg></a
+            ><a class="button button-secondary" href="https://kledpos.tsalikidis.dev/" target="_blank" rel="noreferrer"
+              >Δείτε το live demo <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="hero-note reveal-four">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-circle-check"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+              Για ένα ή περισσότερα καταστήματα</span
+            ><span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-gift"
+                aria-hidden="true"
+              >
+                <rect x="3" y="8" width="18" height="4" rx="1"></rect>
+                <path d="M12 8v13"></path>
+                <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path>
+                <path
+                  d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"
+                ></path>
+              </svg>
+              Δωρεάν για 60 ημέρες</span
+            ><span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-timer"
+                aria-hidden="true"
+              >
+                <line x1="10" x2="14" y1="2" y2="2"></line>
+                <line x1="12" x2="15" y1="14" y2="11"></line>
+                <circle cx="12" cy="14" r="8"></circle>
+              </svg>
+              Ξεκινήστε σε 30 λεπτά με εγγραφή και καταχώρηση του μενού
+              σας</span
+            >
+          </div>
+        </div>
+        <div
+          class="product-stage"
+          aria-label="Ενδεικτική απεικόνιση του KledPOS"
+        >
+          <div class="stage-glow"></div>
+          <div class="dashboard-window">
+            <div class="window-bar">
+              <span class="window-brand"
+                ><svg
+                  class="kled-mark"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <defs>
+                    <linearGradient
+                      id="mockup-lit"
+                      x1="10"
+                      y1="8"
+                      x2="30"
+                      y2="30"
+                    >
+                      <stop stop-color="#fdba74"></stop>
+                      <stop offset="1" stop-color="#f97316"></stop>
+                    </linearGradient>
+                    <linearGradient
+                      id="mockup-shade"
+                      x1="14"
+                      y1="20"
+                      x2="38"
+                      y2="42"
+                    >
+                      <stop stop-color="#ea580c"></stop>
+                      <stop offset="1" stop-color="#b93c09"></stop>
+                    </linearGradient>
+                    <clipPath id="mockup-above">
+                      <polygon points="0,0 48,0 48,11.5 0,33.5"></polygon>
+                    </clipPath>
+                    <clipPath id="mockup-below">
+                      <polygon points="0,34.5 48,12.5 48,48 0,48"></polygon>
+                    </clipPath>
+                  </defs>
+                  <g
+                    class="mark-half mark-half-top"
+                    clip-path="url(#mockup-above)"
+                  >
+                    <path
+                      d="M10 8 H17 V20.5 L28.5 8 H37 L25 22.5 L37.5 40 H29 L19.5 26.5 L17 29 V40 H10 Z"
+                      fill="url(#mockup-lit)"
+                    ></path>
+                  </g>
+                  <g
+                    class="mark-half mark-half-bottom"
+                    clip-path="url(#mockup-below)"
+                  >
+                    <path
+                      d="M10 8 H17 V20.5 L28.5 8 H37 L25 22.5 L37.5 40 H29 L19.5 26.5 L17 29 V40 H10 Z"
+                      fill="url(#mockup-shade)"
+                    ></path>
+                  </g></svg
+                ><strong>KledPOS</strong></span
+              ><span class="window-dots"><i></i><i></i><i></i></span>
+            </div>
+            <div class="dashboard-shell">
+              <aside class="mock-sidebar">
+                <span class="mock-nav active"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-layout-dashboard"
+                    aria-hidden="true"
+                  >
+                    <rect width="7" height="9" x="3" y="3" rx="1"></rect>
+                    <rect width="7" height="5" x="14" y="3" rx="1"></rect>
+                    <rect width="7" height="9" x="14" y="12" rx="1"></rect>
+                    <rect
+                      width="7"
+                      height="5"
+                      x="3"
+                      y="16"
+                      rx="1"
+                    ></rect></svg></span
+                ><span class="mock-nav"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-receipt-text"
+                    aria-hidden="true"
+                  >
+                    <path d="M13 16H8"></path>
+                    <path d="M14 8H8"></path>
+                    <path d="M16 12H8"></path>
+                    <path
+                      d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"
+                    ></path></svg></span
+                ><span class="mock-nav"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-utensils"
+                    aria-hidden="true"
+                  >
+                    <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+                    <path d="M7 2v20"></path>
+                    <path
+                      d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"
+                    ></path></svg></span
+                ><span class="mock-nav"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-boxes"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"
+                    ></path>
+                    <path d="m7 16.5-4.74-2.85"></path>
+                    <path d="m7 16.5 5-3"></path>
+                    <path d="M7 16.5v5.17"></path>
+                    <path
+                      d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"
+                    ></path>
+                    <path d="m17 16.5-5-3"></path>
+                    <path d="m17 16.5 4.74-2.85"></path>
+                    <path d="M17 16.5v5.17"></path>
+                    <path
+                      d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"
+                    ></path>
+                    <path d="M12 8 7.26 5.15"></path>
+                    <path d="m12 8 4.74-2.85"></path>
+                    <path d="M12 13.5V8"></path></svg></span
+                ><span class="mock-nav"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-shopping-bag"
+                    aria-hidden="true"
+                  >
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    <path d="M3.103 6.034h17.794"></path>
+                    <path
+                      d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"
+                    ></path></svg
+                ></span>
+              </aside>
+              <div class="mock-main">
+                <div class="mock-head">
+                  <div>
+                    <span class="mock-eyebrow">Κεντρική εικόνα</span
+                    ><strong>Καλημέρα, Κώστα</strong>
+                  </div>
+                  <span class="branch-pill"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-store"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5"
+                      ></path>
+                      <path
+                        d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244"
+                      ></path>
+                      <path
+                        d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05"
+                      ></path>
+                    </svg>
+                    Γλυφάδα <span>⌄</span></span
+                  >
+                </div>
+                <div class="stat-row">
+                  <div class="stat-card">
+                    <span>Πωλήσεις σήμερα</span><strong>4.860€</strong
+                    ><small>↗ 12,4%</small>
+                  </div>
+                  <div class="stat-card">
+                    <span>Ενεργές παραγγελίες</span><strong>174</strong
+                    ><small class="live-small"><i></i> live</small>
+                  </div>
+                  <div class="stat-card stat-card-wide">
+                    <span>Μηνιαία έσοδα</span><strong>21,8k€</strong
+                    ><small>↗ 16,3%</small>
+                  </div>
+                </div>
+                <div class="chart-card">
+                  <div class="chart-heading">
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-chart-column"
+                        aria-hidden="true"
+                      >
+                        <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                        <path d="M18 17V9"></path>
+                        <path d="M13 17V5"></path>
+                        <path d="M8 17v-3"></path>
+                      </svg>
+                      Πωλήσεις ανά κατάστημα</span
+                    ><small>Τελευταίοι 6 μήνες</small>
+                  </div>
+                  <div class="chart-bars">
+                    <span class="bar plum" style="--bar-height: 42%"></span
+                    ><span class="bar coral" style="--bar-height: 62%"></span
+                    ><span class="bar plum" style="--bar-height: 51%"></span
+                    ><span class="bar coral" style="--bar-height: 76%"></span
+                    ><span class="bar plum" style="--bar-height: 58%"></span
+                    ><span class="bar coral" style="--bar-height: 86%"></span
+                    ><span class="bar plum" style="--bar-height: 67%"></span
+                    ><span class="bar coral" style="--bar-height: 96%"></span
+                    ><span class="bar plum" style="--bar-height: 72%"></span
+                    ><span class="bar coral" style="--bar-height: 84%"></span
+                    ><span class="bar plum" style="--bar-height: 61%"></span
+                    ><span class="bar coral" style="--bar-height: 74%"></span>
+                  </div>
+                  <div class="chart-labels">
+                    <span>Απρ</span><span>Μάι</span><span>Ιούν</span
+                    ><span>Ιούλ</span><span>Αύγ</span><span>Σεπ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-float float-card">
+            <div class="float-topline">
+              <span>Νέα παραγγελία</span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-receipt-text"
+                aria-hidden="true"
+              >
+                <path d="M13 16H8"></path>
+                <path d="M14 8H8"></path>
+                <path d="M16 12H8"></path>
+                <path
+                  d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"
+                ></path>
+              </svg>
+            </div>
+            <div class="order-item">
+              <span class="food-orb">B</span
+              ><span><b>Kled Classic</b><small>1 × 11,90€</small></span
+              ><b>11,90€</b>
+            </div>
+            <div class="order-item">
+              <span class="food-orb soft">F</span
+              ><span><b>Πατάτες</b><small>1 × 4,20€</small></span
+              ><b>4,20€</b>
+            </div>
+            <div class="order-total">
+              <span>Σύνολο</span><strong>16,10€</strong>
+            </div>
+            <div class="send-order">
+              <span>Αποστολή στην κουζίνα</span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-right"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="kitchen-float float-card">
+            <div class="kitchen-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chef-hat"
+                aria-hidden="true"
+              >
+                <path
+                  d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"
+                ></path>
+                <path d="M6 17h12"></path>
+              </svg>
+            </div>
+            <div>
+              <small>Κουζίνα</small><strong>Παραγγελία #042</strong
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-clock3 lucide-clock-3"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 6v6h4"></path>
+                </svg>
+                04:28</span
+              >
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check check-icon"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="m9 12 2 2 4-4"></path>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="flow-section" id="flow">
+        <div class="section-intro flow-intro">
+          <span class="section-kicker">ΜΙΑ ΕΝΙΑΙΑ ΡΟΗ</span>
+          <h2>Ό,τι συμβαίνει τώρα,<br /><em>όλα σε ένα μέρος.</em></h2>
+          <p>
+            Κάθε ομάδα βλέπει ακριβώς ό,τι χρειάζεται, τη στιγμή που το
+            χρειάζεται.
+          </p>
+        </div>
+        <div class="flow-track">
+          <div class="flow-line" aria-hidden="true"><i></i><i></i><i></i></div>
+          <article class="flow-step">
+            <span class="flow-number">01</span
+            ><i class="flow-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-receipt-text"
+                aria-hidden="true"
+              >
+                <path d="M13 16H8"></path>
+                <path d="M14 8H8"></path>
+                <path d="M16 12H8"></path>
+                <path
+                  d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"
+                ></path></svg
+            ></i>
+            <h3>Η παραγγελία μπαίνει</h3>
+            <p>
+              Από το ταμείο ή το κινητό του σερβιτόρου, χωρίς περιττά βήματα.
+            </p>
+          </article>
+          <article class="flow-step">
+            <span class="flow-number">02</span
+            ><i class="flow-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chef-hat"
+                aria-hidden="true"
+              >
+                <path
+                  d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"
+                ></path>
+                <path d="M6 17h12"></path></svg
+            ></i>
+            <h3>Η κουζίνα ενημερώνεται</h3>
+            <p>
+              Οι παραγγελίες φτάνουν καθαρά και όμορφα στην κουζίνα
+              χρησιμοποιώντας ένα monitor εντός.
+            </p>
+          </article>
+          <article class="flow-step">
+            <span class="flow-number">03</span
+            ><i class="flow-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-boxes"
+                aria-hidden="true"
+              >
+                <path
+                  d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"
+                ></path>
+                <path d="m7 16.5-4.74-2.85"></path>
+                <path d="m7 16.5 5-3"></path>
+                <path d="M7 16.5v5.17"></path>
+                <path
+                  d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"
+                ></path>
+                <path d="m17 16.5-5-3"></path>
+                <path d="m17 16.5 4.74-2.85"></path>
+                <path d="M17 16.5v5.17"></path>
+                <path
+                  d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"
+                ></path>
+                <path d="M12 8 7.26 5.15"></path>
+                <path d="m12 8 4.74-2.85"></path>
+                <path d="M12 13.5V8"></path></svg
+            ></i>
+            <h3>Το απόθεμα κινείται</h3>
+            <p>
+              Οι ποσότητες ακολουθούν τις πωλήσεις και δείχνουν έγκαιρα τι
+              τελειώνει.
+            </p>
+          </article>
+          <article class="flow-step">
+            <span class="flow-number">04</span
+            ><i class="flow-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-eye"
+                aria-hidden="true"
+              >
+                <path
+                  d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"
+                ></path>
+                <circle cx="12" cy="12" r="3"></circle></svg
+            ></i>
+            <h3>Καθαρή εικόνα</h3>
+            <p>
+              Πωλήσεις, κόστος και κινήσεις σε όλα τα καταστήματα σε μία ματιά.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="showcase-section" id="features">
+        <article class="showcase-row order-showcase">
+          <div class="showcase-copy">
+            <span class="section-kicker">ΑΠΟ ΤΗ ΣΑΛΑ ΣΤΗΝ ΚΟΥΖΙΝΑ</span>
+            <h2>Κινούνται όλοι<br />στον ίδιο <em>ρυθμό.</em></h2>
+            <p>
+              Η παραγγελία ξεκινά εκεί που βρίσκεται ο πελάτης και φτάνει στην
+              κουζίνα έτοιμη για εκτέλεση.
+            </p>
+            <ul class="feature-points">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                Ταμείο, παραγγελιοληψία και KDS
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                Ζωντανή εικόνα τρεχουσών παραγγελιών
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                Κατάλογος, επιλογές και διαθεσιμότητα πιάτων
+              </li>
+            </ul>
+          </div>
+          <div class="showcase-canvas pos-canvas">
+            <span class="canvas-caption">ΠΑΡΑΓΓΕΛΙΟΛΗΨΙΑ / POS</span>
+            <div
+              class="pos-mockup"
+              aria-label="Ενδεικτική απεικόνιση παραγγελιοληψίας"
+            >
+              <div class="pos-topbar">
+                <span
+                  ><svg
+                    class="kled-mark"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="pos-mockup-lit"
+                        x1="10"
+                        y1="8"
+                        x2="30"
+                        y2="30"
+                      >
+                        <stop stop-color="#fdba74"></stop>
+                        <stop offset="1" stop-color="#f97316"></stop>
+                      </linearGradient>
+                      <linearGradient
+                        id="pos-mockup-shade"
+                        x1="14"
+                        y1="20"
+                        x2="38"
+                        y2="42"
+                      >
+                        <stop stop-color="#ea580c"></stop>
+                        <stop offset="1" stop-color="#b93c09"></stop>
+                      </linearGradient>
+                      <clipPath id="pos-mockup-above">
+                        <polygon points="0,0 48,0 48,11.5 0,33.5"></polygon>
+                      </clipPath>
+                      <clipPath id="pos-mockup-below">
+                        <polygon points="0,34.5 48,12.5 48,48 0,48"></polygon>
+                      </clipPath>
+                    </defs>
+                    <g
+                      class="mark-half mark-half-top"
+                      clip-path="url(#pos-mockup-above)"
+                    >
+                      <path
+                        d="M10 8 H17 V20.5 L28.5 8 H37 L25 22.5 L37.5 40 H29 L19.5 26.5 L17 29 V40 H10 Z"
+                        fill="url(#pos-mockup-lit)"
+                      ></path>
+                    </g>
+                    <g
+                      class="mark-half mark-half-bottom"
+                      clip-path="url(#pos-mockup-below)"
+                    >
+                      <path
+                        d="M10 8 H17 V20.5 L28.5 8 H37 L25 22.5 L37.5 40 H29 L19.5 26.5 L17 29 V40 H10 Z"
+                        fill="url(#pos-mockup-shade)"
+                      ></path>
+                    </g></svg
+                  ><b>KledPOS</b></span
+                ><span class="connected"><i></i> Σε σύνδεση</span>
+              </div>
+              <div class="pos-shell">
+                <div class="pos-categories">
+                  <span class="category-active"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-utensils"
+                      aria-hidden="true"
+                    >
+                      <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+                      <path d="M7 2v20"></path>
+                      <path
+                        d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"
+                      ></path>
+                    </svg>
+                    Όλα</span
+                  ><span>Ορεκτικά</span><span>Σαλάτες</span><span>Burger</span
+                  ><span>Κυρίως</span><span>Επιδόρπια</span>
+                </div>
+                <div class="product-grid">
+                  <div class="product-tile">
+                    <span class="product-visual visual-1">B</span
+                    ><span><b>Kled Classic</b><small>11,90€</small></span>
+                  </div>
+                  <div class="product-tile">
+                    <span class="product-visual visual-2">S</span
+                    ><span><b>Kled Spicy</b><small>12,50€</small></span>
+                  </div>
+                  <div class="product-tile">
+                    <span class="product-visual visual-3">N</span
+                    ><span><b>Ντάκος Κρήτης</b><small>5,80€</small></span>
+                  </div>
+                  <div class="product-tile">
+                    <span class="product-visual visual-1">X</span
+                    ><span><b>Χωριάτικη</b><small>8,20€</small></span>
+                  </div>
+                  <div class="product-tile">
+                    <span class="product-visual visual-2">P</span
+                    ><span><b>Πατάτες</b><small>4,20€</small></span>
+                  </div>
+                  <div class="product-tile">
+                    <span class="product-visual visual-3">Σ</span
+                    ><span><b>Σοκολατόπιτα</b><small>6,40€</small></span>
+                  </div>
+                </div>
+                <div class="ticket-panel">
+                  <div class="ticket-title">
+                    <span>Νέα παραγγελία</span><small>Τραπέζι 06</small>
+                  </div>
+                  <div class="ticket-lines">
+                    <span><b>1</b> Kled Classic <strong>11,90€</strong></span
+                    ><span><b>1</b> Πατάτες <strong>4,20€</strong></span
+                    ><span><b>2</b> Mythos 500ml <strong>11,00€</strong></span>
+                  </div>
+                  <div class="ticket-sum">
+                    <span>Σύνολο</span><strong>27,10€</strong>
+                  </div>
+                  <span class="ticket-button"
+                    >Αποστολή παραγγελίας
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-right"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path></svg
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <span class="mini-status status-order"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chef-hat"
+                aria-hidden="true"
+              >
+                <path
+                  d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"
+                ></path>
+                <path d="M6 17h12"></path></svg
+              ><b>Στην κουζίνα</b><small>#042 · μόλις τώρα</small></span
+            >
+          </div>
+        </article>
+        <article class="showcase-row stock-showcase">
+          <div class="showcase-canvas inventory-canvas">
+            <span class="canvas-caption">ΑΠΟΘΕΜΑ / ΑΓΟΡΕΣ</span>
+            <div
+              class="inventory-mockup"
+              aria-label="Ενδεικτική απεικόνιση διαχείρισης αποθέματος"
+            >
+              <div class="inventory-head">
+                <div>
+                  <small>ΑΠΟΘΕΜΑ</small><strong>Επισκόπηση καταστήματος</strong>
+                </div>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-store"
+                    aria-hidden="true"
+                  >
+                    <path d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5"></path>
+                    <path
+                      d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244"
+                    ></path>
+                    <path
+                      d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05"
+                    ></path>
+                  </svg>
+                  Γλυφάδα⌄</span
+                >
+              </div>
+              <div class="inventory-stats">
+                <div><span>Αξία αποθέματος</span><strong>4.336€</strong></div>
+                <div><span>Χαμηλό απόθεμα</span><strong>10</strong></div>
+                <div><span>Εξαντλήθηκαν</span><strong>7</strong></div>
+              </div>
+              <div class="stock-list">
+                <div class="stock-header">
+                  <span>Υλικό</span><span>Διαθέσιμο</span><span>Κατάσταση</span>
+                </div>
+                <div class="stock-row">
+                  <span
+                    ><i class="stock-icon"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-boxes"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"
+                        ></path>
+                        <path d="m7 16.5-4.74-2.85"></path>
+                        <path d="m7 16.5 5-3"></path>
+                        <path d="M7 16.5v5.17"></path>
+                        <path
+                          d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"
+                        ></path>
+                        <path d="m17 16.5-5-3"></path>
+                        <path d="m17 16.5 4.74-2.85"></path>
+                        <path d="M17 16.5v5.17"></path>
+                        <path
+                          d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"
+                        ></path>
+                        <path d="M12 8 7.26 5.15"></path>
+                        <path d="m12 8 4.74-2.85"></path>
+                        <path d="M12 13.5V8"></path></svg></i
+                    >Μοσχαρίσιος κιμάς</span
+                  ><b>12,4 kg</b><em class="stock-status good">Επαρκές</em>
+                </div>
+                <div class="stock-row">
+                  <span
+                    ><i class="stock-icon"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-boxes"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"
+                        ></path>
+                        <path d="m7 16.5-4.74-2.85"></path>
+                        <path d="m7 16.5 5-3"></path>
+                        <path d="M7 16.5v5.17"></path>
+                        <path
+                          d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"
+                        ></path>
+                        <path d="m17 16.5-5-3"></path>
+                        <path d="m17 16.5 4.74-2.85"></path>
+                        <path d="M17 16.5v5.17"></path>
+                        <path
+                          d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"
+                        ></path>
+                        <path d="M12 8 7.26 5.15"></path>
+                        <path d="m12 8 4.74-2.85"></path>
+                        <path d="M12 13.5V8"></path></svg></i
+                    >Ψωμάκι brioche</span
+                  ><b>90 τεμ.</b><em class="stock-status low">Χαμηλό</em>
+                </div>
+                <div class="stock-row">
+                  <span
+                    ><i class="stock-icon"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-boxes"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"
+                        ></path>
+                        <path d="m7 16.5-4.74-2.85"></path>
+                        <path d="m7 16.5 5-3"></path>
+                        <path d="M7 16.5v5.17"></path>
+                        <path
+                          d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"
+                        ></path>
+                        <path d="m17 16.5-5-3"></path>
+                        <path d="m17 16.5 4.74-2.85"></path>
+                        <path d="M17 16.5v5.17"></path>
+                        <path
+                          d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"
+                        ></path>
+                        <path d="M12 8 7.26 5.15"></path>
+                        <path d="m12 8 4.74-2.85"></path>
+                        <path d="M12 13.5V8"></path></svg></i
+                    >Τσένταρ</span
+                  ><b>0 kg</b><em class="stock-status out">Εξαντλήθηκε</em>
+                </div>
+                <div class="stock-row">
+                  <span
+                    ><i class="stock-icon"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-boxes"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"
+                        ></path>
+                        <path d="m7 16.5-4.74-2.85"></path>
+                        <path d="m7 16.5 5-3"></path>
+                        <path d="M7 16.5v5.17"></path>
+                        <path
+                          d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"
+                        ></path>
+                        <path d="m17 16.5-5-3"></path>
+                        <path d="m17 16.5 4.74-2.85"></path>
+                        <path d="M17 16.5v5.17"></path>
+                        <path
+                          d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"
+                        ></path>
+                        <path d="M12 8 7.26 5.15"></path>
+                        <path d="m12 8 4.74-2.85"></path>
+                        <path d="M12 13.5V8"></path></svg></i
+                    >Πατάτες</span
+                  ><b>34,2 kg</b><em class="stock-status good">Επαρκές</em>
+                </div>
+              </div>
+              <div class="restock-toast">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-truck"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"
+                  ></path>
+                  <path d="M15 18H9"></path>
+                  <path
+                    d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"
+                  ></path>
+                  <circle cx="17" cy="18" r="2"></circle>
+                  <circle cx="7" cy="18" r="2"></circle></svg
+                ><span
+                  ><b>Έτοιμο για ανεφοδιασμό</b
+                  ><small>3 προτάσεις αγοράς δημιουργήθηκαν</small></span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </div>
+            </div>
+            <span class="mini-status status-stock"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-package-search"
+                aria-hidden="true"
+              >
+                <path d="M12 22V12"></path>
+                <path d="M20.27 18.27 22 20"></path>
+                <path
+                  d="M21 10.498V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.729l7 4a2 2 0 0 0 2 .001l.98-.559"
+                ></path>
+                <path d="M3.29 7 12 12l8.71-5"></path>
+                <path d="m7.5 4.27 8.997 5.148"></path>
+                <circle cx="18.5" cy="16.5" r="2.5"></circle></svg
+              ><b>Χαμηλό απόθεμα</b
+              ><small>Χρειάζονται έλεγχο 10 υλικά</small></span
+            >
+          </div>
+          <div class="showcase-copy">
+            <span class="section-kicker">ΑΠΟΘΕΜΑ ΠΟΥ ΚΙΝΕΙΤΑΙ</span>
+            <h2>Ξέρετε τι υπάρχει,<br />και τι <em>χρειάζεστε.</em></h2>
+            <p>
+              Το KledPOS συνδέει συνταγές, πωλήσεις, αποθέματα και αγορές. Έτσι
+              βλέπετε τι καταναλώνεται, τι χάνεται και τι πρέπει να παραγγελθεί.
+            </p>
+            <ul class="feature-points">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                Απόθεμα ανά κατάστημα
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                Προμηθευτές και παραγγελίες αγοράς
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                Καταγραφή απωλειών και αναφορές
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section class="capabilities-section">
+        <div class="section-intro capabilities-intro">
+          <span class="section-kicker">ΚΑΘΕ ΥΠΗΡΕΣΙΑ, ΕΝΑ ΜΕΡΟΣ</span>
+          <h2>
+            Ό,τι χρειάζεστε από το πρώτο τραπέζι<br />ως το
+            <em>τέλος της ημέρας.</em>
+          </h2>
+        </div>
+        <div class="capability-grid">
+          <article class="capability-card orange-card">
+            <span class="capability-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-receipt-text"
+                aria-hidden="true"
+              >
+                <path d="M13 16H8"></path>
+                <path d="M14 8H8"></path>
+                <path d="M16 12H8"></path>
+                <path
+                  d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"
+                ></path></svg></span
+            ><span class="capability-index">01</span>
+            <h3>POS &amp; παραγγελίες</h3>
+            <p>
+              Γρήγορη παραγγελιοληψία για το σέρβις και ζωντανή εξέλιξη κάθε
+              παραγγελίας.
+            </p>
+          </article>
+          <article class="capability-card">
+            <span class="capability-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chef-hat"
+                aria-hidden="true"
+              >
+                <path
+                  d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"
+                ></path>
+                <path d="M6 17h12"></path></svg></span
+            ><span class="capability-index">02</span>
+            <h3>Οθόνη κουζίνας</h3>
+            <p>
+              Καθαρή σειρά και χρόνοι εκτέλεσης προβάλλονται σε όλα τα πόστα.
+            </p>
+          </article>
+          <article class="capability-card">
+            <span class="capability-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-clipboard-list"
+                aria-hidden="true"
+              >
+                <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
+                <path
+                  d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+                ></path>
+                <path d="M12 11h4"></path>
+                <path d="M12 16h4"></path>
+                <path d="M8 11h.01"></path>
+                <path d="M8 16h.01"></path></svg></span
+            ><span class="capability-index">03</span>
+            <h3>Κατάλογος &amp; συνταγές</h3>
+            <p>
+              Επιλογές μενού οργανωμένες σε ένα σημείο. Ακόμη και ανάλυση σε
+              πρώτες ύλες και συνταγές για βαθύτερη εικόνα του μενού και του
+              αποθέματός σας.
+            </p>
+          </article>
+          <article class="capability-card">
+            <span class="capability-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-boxes"
+                aria-hidden="true"
+              >
+                <path
+                  d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"
+                ></path>
+                <path d="m7 16.5-4.74-2.85"></path>
+                <path d="m7 16.5 5-3"></path>
+                <path d="M7 16.5v5.17"></path>
+                <path
+                  d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"
+                ></path>
+                <path d="m17 16.5-5-3"></path>
+                <path d="m17 16.5 4.74-2.85"></path>
+                <path d="M17 16.5v5.17"></path>
+                <path
+                  d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"
+                ></path>
+                <path d="M12 8 7.26 5.15"></path>
+                <path d="m12 8 4.74-2.85"></path>
+                <path d="M12 13.5V8"></path></svg></span
+            ><span class="capability-index">04</span>
+            <h3>Απόθεμα</h3>
+            <p>
+              Τρέχουσες ποσότητες, όρια, μεταφορές από κεντρικά καταστήματα και
+              ιστορικό κίνησης ανά κατάστημα.
+            </p>
+          </article>
+          <article class="capability-card">
+            <span class="capability-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-shopping-cart"
+                aria-hidden="true"
+              >
+                <circle cx="8" cy="21" r="1"></circle>
+                <circle cx="19" cy="21" r="1"></circle>
+                <path
+                  d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                ></path></svg></span
+            ><span class="capability-index">05</span>
+            <h3>Αγορές &amp; προμηθευτές</h3>
+            <p>Παραγγελίες αγοράς, παραλαβές και εικόνα δαπανών οργανωμένα.</p>
+          </article>
+          <article class="capability-card">
+            <span class="capability-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-trash2 lucide-trash-2"
+                aria-hidden="true"
+              >
+                <path d="M10 11v6"></path>
+                <path d="M14 11v6"></path>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
+                <path d="M3 6h18"></path>
+                <path
+                  d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                ></path></svg></span
+            ><span class="capability-index">06</span>
+            <h3>Απώλειες</h3>
+            <p>
+              Καταγραφή φύρας και αιτιών, ώστε το πραγματικό κόστος να είναι
+              πάντα ορατό.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="branches-section">
+        <div class="branches-grid" aria-hidden="true"></div>
+        <div class="branches-copy">
+          <span class="dark-kicker">ΠΟΛΛΑ ΚΑΤΑΣΤΗΜΑΤΑ. ΜΙΑ ΕΙΚΟΝΑ.</span>
+          <h2>
+            Κάθε σημείο λειτουργεί αυτόνομα.<br />Εσείς τα βλέπετε
+            <em>όλα μαζί.</em>
+          </h2>
+          <p>
+            Συγκρίνετε πωλήσεις, παραγγελίες και απόθεμα ανά κατάστημα, χωρίς να
+            χάνετε τη συνολική εικόνα της επιχείρησης.
+          </p>
+          <div class="branch-benefits">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-building2 lucide-building-2"
+                aria-hidden="true"
+              >
+                <path d="M10 12h4"></path>
+                <path d="M10 8h4"></path>
+                <path d="M14 21v-3a2 2 0 0 0-4 0v3"></path>
+                <path
+                  d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"
+                ></path>
+                <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
+              </svg>
+              Ενιαία διαχείριση</span
+            ><span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chart-column"
+                aria-hidden="true"
+              >
+                <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                <path d="M18 17V9"></path>
+                <path d="M13 17V5"></path>
+                <path d="M8 17v-3"></path>
+              </svg>
+              Αναφορές ανά σημείο</span
+            ><span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-users"
+                aria-hidden="true"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+              </svg>
+              Ρόλοι για την ομάδα</span
+            >
+          </div>
+        </div>
+        <div class="branch-visual">
+          <div class="network-map">
+            <span class="network-line line-a"></span
+            ><span class="network-line line-b"></span
+            ><span class="network-line line-c"></span
+            ><span class="hq-node"
+              ><svg
+                class="kled-mark"
+                width="30"
+                height="30"
+                viewBox="0 0 48 48"
+                fill="none"
+                aria-hidden="true"
+              >
+                <defs>
+                  <linearGradient
+                    id="branch-hq-lit"
+                    x1="10"
+                    y1="8"
+                    x2="30"
+                    y2="30"
+                  >
+                    <stop stop-color="#fdba74"></stop>
+                    <stop offset="1" stop-color="#f97316"></stop>
+                  </linearGradient>
+                  <linearGradient
+                    id="branch-hq-shade"
+                    x1="14"
+                    y1="20"
+                    x2="38"
+                    y2="42"
+                  >
+                    <stop stop-color="#ea580c"></stop>
+                    <stop offset="1" stop-color="#b93c09"></stop>
+                  </linearGradient>
+                  <clipPath id="branch-hq-above">
+                    <polygon points="0,0 48,0 48,11.5 0,33.5"></polygon>
+                  </clipPath>
+                  <clipPath id="branch-hq-below">
+                    <polygon points="0,34.5 48,12.5 48,48 0,48"></polygon>
+                  </clipPath>
+                </defs>
+                <g
+                  class="mark-half mark-half-top"
+                  clip-path="url(#branch-hq-above)"
+                >
+                  <path
+                    d="M10 8 H17 V20.5 L28.5 8 H37 L25 22.5 L37.5 40 H29 L19.5 26.5 L17 29 V40 H10 Z"
+                    fill="url(#branch-hq-lit)"
+                  ></path>
+                </g>
+                <g
+                  class="mark-half mark-half-bottom"
+                  clip-path="url(#branch-hq-below)"
+                >
+                  <path
+                    d="M10 8 H17 V20.5 L28.5 8 H37 L25 22.5 L37.5 40 H29 L19.5 26.5 L17 29 V40 H10 Z"
+                    fill="url(#branch-hq-shade)"
+                  ></path>
+                </g></svg
+              ><b>Κεντρική εικόνα</b><small>Όλα τα καταστήματα</small></span
+            ><span class="branch-node node-one"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-store"
+                aria-hidden="true"
+              >
+                <path d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5"></path>
+                <path
+                  d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244"
+                ></path>
+                <path
+                  d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05"
+                ></path></svg
+              ><b>Γλυφάδα</b><small><i></i> Ανοιχτό</small></span
+            ><span class="branch-node node-two"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-store"
+                aria-hidden="true"
+              >
+                <path d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5"></path>
+                <path
+                  d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244"
+                ></path>
+                <path
+                  d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05"
+                ></path></svg
+              ><b>Σύνταγμα</b><small><i></i> Ανοιχτό</small></span
+            ><span class="branch-node node-three"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-store"
+                aria-hidden="true"
+              >
+                <path d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5"></path>
+                <path
+                  d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244"
+                ></path>
+                <path
+                  d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05"
+                ></path></svg
+              ><b>Πειραιάς</b><small><i></i> Ανοιχτό</small></span
+            >
+          </div>
+          <div class="overview-pill">
+            <span><small>Συνολικές πωλήσεις</small><b>€12.480</b></span
+            ><span><small>Ενεργές παραγγελίες</small><b>68</b></span
+            ><span><small>Καταστήματα</small><b>03</b></span>
+          </div>
+        </div>
+      </section>
+      <section class="get-started-section" aria-labelledby="get-started-title">
+        <h2 id="get-started-title">Το επόμενο βήμα για το εστιατόριό σας.</h2>
+        <div class="get-started-actions">
+          <a class="button button-primary"
+            href="https://kledpos.tsalikidis.dev/auth/register"
+            target="_blank" rel="noreferrer">
+            Ξεκινήστε δωρεάν
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
+          <a class="button button-secondary"
+            href="https://kledpos.tsalikidis.dev/"
+            target="_blank" rel="noreferrer">
+            Δείτε το live demo <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+      <section class="contact-section" id="contact">
+        <div class="contact-orb" aria-hidden="true"></div>
+        <div class="contact-copy">
+          <span class="section-kicker">ΕΠΙΚΟΙΝΩΝΙΑ</span>
+          <h2>Ρωτήστε μας ό,τι θέλετε</h2>
+          <p>
+            Πείτε μας λίγα πράγματα για την επιχείρησή σας και θα δούμε μαζί πώς
+            μπορεί να ταιριάξει το KledPOS στην καθημερινότητά σας.
+          </p>
+          <div class="contact-points">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-circle-check"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+              Απαντάμε πάντα άμεσα</span
+            ><span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-circle-check"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+              Σας δείχνουμε λειτουργίες του KledPOS από κοντά</span
+            ><span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-circle-check"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+              Αναλαμβάνουμε την αρχική καταχώρηση του μενού σας αν δεν έχετε
+              χρόνο</span
+            >
+          </div>
+        </div>
+        <form class="contact-form" action="contact.php" method="post">
+          <p class="form-requirement">
+            <span>*</span> Μόνο το τηλέφωνο είναι υποχρεωτικό.
+          </p>
+          <div class="contact-fields">
+            <label
+              ><span class="field-label"
+                >Ονοματεπώνυμο <small>Προαιρετικό</small></span
+              ><input
+                type="text"
+                autocomplete="name"
+                placeholder="Το όνομά σας"
+                maxlength="100"
+                name="name" /></label
+            ><label
+              ><span class="field-label"
+                >Επιχείρηση <small>Προαιρετικό</small></span
+              ><input
+                type="text"
+                autocomplete="organization"
+                placeholder="Επωνυμία επιχείρησης"
+                maxlength="140"
+                name="business" /></label
+            ><label
+              ><span class="field-label">Email <small>Προαιρετικό</small></span
+              ><input
+                type="email"
+                autocomplete="email"
+                placeholder="name@company.gr"
+                maxlength="254"
+                name="email" /></label
+            ><label
+              ><span class="field-label"
+                >Τηλέφωνο
+                <small class="required-label">Υποχρεωτικό</small></span
+              ><input
+                type="tel"
+                autocomplete="tel"
+                inputmode="tel"
+                placeholder="69XXXXXXXX"
+                maxlength="30"
+                required=""
+                name="phone" /></label
+            ><label class="contact-message"
+              ><span class="field-label"
+                >Πώς μπορούμε να βοηθήσουμε; <small>Προαιρετικό</small></span
+              ><textarea
+                name="message"
+                rows="5"
+                placeholder="Πείτε μας λίγα λόγια για την επιχείρηση και τις ανάγκες σας"
+                maxlength="2000"
+              ></textarea></label
+            ><label class="contact-trap" aria-hidden="true"
+              >Ιστότοπος<input
+                type="text"
+                tabindex="-1"
+                autocomplete="off"
+                name="website"
+            /></label>
+          </div>
+          <div class="contact-form-footer">
+            <small
+              >Θα χρησιμοποιήσουμε τα στοιχεία σας μόνο για να επικοινωνήσουμε
+              μαζί σας.</small
+            ><button class="button button-primary contact-submit" type="submit">
+              Αποστολή αιτήματος
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-right"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+          <output class="form-status" aria-live="polite"></output>
+        </form>
+      </section>
+      <footer class="site-footer">
+        <span class="brand" aria-label="KledPOS"
+          ><svg
+            class="kled-mark"
+            width="40"
+            height="40"
+            viewBox="0 0 48 48"
+            fill="none"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient
+                id="footer-logo-lit"
+                x1="10"
+                y1="8"
+                x2="30"
+                y2="30"
+              >
+                <stop stop-color="#fdba74"></stop>
+                <stop offset="1" stop-color="#f97316"></stop>
+              </linearGradient>
+              <linearGradient
+                id="footer-logo-shade"
+                x1="14"
+                y1="20"
+                x2="38"
+                y2="42"
+              >
+                <stop stop-color="#ea580c"></stop>
+                <stop offset="1" stop-color="#b93c09"></stop>
+              </linearGradient>
+              <clipPath id="footer-logo-above">
+                <polygon points="0,0 48,0 48,11.5 0,33.5"></polygon>
+              </clipPath>
+              <clipPath id="footer-logo-below">
+                <polygon points="0,34.5 48,12.5 48,48 0,48"></polygon>
+              </clipPath>
+            </defs>
+            <g
+              class="mark-half mark-half-top"
+              clip-path="url(#footer-logo-above)"
+            >
+              <path
+                d="M10 8 H17 V20.5 L28.5 8 H37 L25 22.5 L37.5 40 H29 L19.5 26.5 L17 29 V40 H10 Z"
+                fill="url(#footer-logo-lit)"
+              ></path>
+            </g>
+            <g
+              class="mark-half mark-half-bottom"
+              clip-path="url(#footer-logo-below)"
+            >
+              <path
+                d="M10 8 H17 V20.5 L28.5 8 H37 L25 22.5 L37.5 40 H29 L19.5 26.5 L17 29 V40 H10 Z"
+                fill="url(#footer-logo-shade)"
+              ></path>
+            </g></svg
+          ><span class="brand-word">Kled<span>POS</span></span></span
+        >
+        <p>Η διαχείριση του εστιατορίου σας</p>
+        <div class="footer-links">
+          <a href="#flow">Η πλατφόρμα</a><a href="#features">Δυνατότητες</a
+          ><a
+            href="https://kledpos.tsalikidis.dev/"
+            target="_blank"
+            rel="noreferrer"
+            >Live demo ↗</a
+          >
+        </div>
+        <small>© 2026 KledPOS</small>
+      </footer>
+    </main>
+  </body>
+</html>
